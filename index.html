@@ -54,7 +54,7 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="right hide-small">
       <a href="#about" class="bar-item button">ABOUT</a>
-	  <a href="https://online.stringnosis.com" target="_blank" class="bar-item button"><i class="fa fa-wifi"></i> FREE TRIAL</a>
+	    <button class="bar-item button blade-button" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
       <a href="#team" class="bar-item button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#structure" class="bar-item button"><i class="fa fa-th"></i> STRUCTURE</a>
       <a href="#tiers" class="bar-item button"><i class="fa fa-usd"></i> TIERS</a>
@@ -68,11 +68,39 @@ body, html {
   </div>
 </div>
 
+<div id="id01" class="modal animate-opacity">
+    <div class="modal-content card-4">
+      <header class="container blade-blue">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="button large display-topright">&times;</span>
+        <h2>StrinGnosis&reg; 14-Day Trial</h2>
+      </header>
+      <div class="container justify">
+        <div style="line-height:1.4;width: 90%;margin: 0 auto;">
+        <p style="padding-top: 10px;">StrinGnosis Online® is the first advanced engineering software being provided to the industry as a fully managed, subscription based SaaS offering. It is the online version of StrinGnosis®, the powerful desktop well design software developed by <a href="https://www.blade-energy.com/software/">Blade Tech.</a></p>
+        <p>Driven by <a href="https://aws.amazon.com/appstream2/customers/#Blade" target="_blank">Amazon's AppStream 2.0</a> technology,and hosted on aprivate cloud, StrinGnosis Online® instantly and seamlessly provides all the functionalities of the full desktop version, at a fraction of the ownership cost.</p>
+        <p>The subscription based pricing makes it highly affordable and scalable for all types of users-individual, business or enterprise. Users have access to <a href="http://stringnosis.academy" target="_blank">StrinGnosis Academy</a>™, offering online training resources and access to <a href="https://www.blade-energy.com/service-item/well-engineering/" target="_blank">Blade Energy well engineers</a>.</p>
+        <hr>
+        <div style="width: 80%;margin: 0 auto;text-align: center;">
+        <p style="font-weight: bold; text-align: center">Start your 14-day complimentary trial of StrinGnosis&reg; well design software today.</p>
+        <p style="display: inline-block;text-align: center;"><a href="http://stringnosis.academy" target="_blank" class="button blade-blue" style="height: 100%"><i class="fa fa-th"> </i> Create Account</a></p>
+        <p style="display: inline-block;text-align: center;"><a href="http://stringnosis.academy" target="_blank" class="button blade-blue" style="height: 100%"><i class="fa fa-envelope"> </i> Contact  Blade</a></p>
+      </div>
+      </div>
+      </div>
+      <footer style="margin-top: 10px;" class="container blade-blue">
+        <p style="font-size: 0.8em;">&copy; 2012-2019 <a href="https://www.blade-energy.com/software/" class="hover-text-green">Blade Technology Corporation LLC</a> All Rights Reserved</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button large padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="bar-item button">ABOUT</a>
-  <a href="#https://online.stringnosis.com" target="_blank" onclick="w3_close()" class="bar-item button">FREE TRIAL</a>
+  <button class="bar-item button blade-button" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
   <a href="#team" onclick="w3_close()" class="bar-item button">TEAM</a>
   <a href="#work" onclick="w3_close()" class="bar-item button">STRUCTURE</a>
   <a href="#pricing" onclick="w3_close()" class="bar-item button">TIERS</a>
