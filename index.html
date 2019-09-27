@@ -54,7 +54,7 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="right hide-small">
       <a href="#about" class="bar-item button">ABOUT</a>
-	    <button class="bar-item button blade-button" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
+	    <button class="bar-item button blade-button" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
       <a href="#team" class="bar-item button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#structure" class="bar-item button"><i class="fa fa-th"></i> STRUCTURE</a>
       <a href="#tiers" class="bar-item button"><i class="fa fa-usd"></i> TIERS</a>
@@ -68,22 +68,22 @@ body, html {
   </div>
 </div>
 
-<div id="id01" class="modal animate-opacity">
+<div id="free-trial-modal" class="modal animate-opacity">
     <div class="modal-content card-4">
       <header class="container blade-blue-inverse">
-        <span onclick="document.getElementById('id01').style.display='none'" class="button large display-topright">&times;</span>
+        <span onclick="document.getElementById('free-trial-modal').style.display='none'" class="button large display-topright">&times;</span>
         <h2 style="text-align: center;margin-top: 15px;font-weight: bold;">StrinGnosis<sup>&reg;</sup> 14-Day Trial</h2>
       </header>
       <div class="container justify">
         <div style="line-height:1.4;width: 90%;margin: 0 auto;">
-        <p style="padding-top: ;">StrinGnosis<sup>&reg;</sup> Online is the first advanced well engineering software being provided to the industry as a fully managed, subscription based SaaS offering. It is the online version of StrinGnosis<sup>&reg;</sup>, the powerful desktop well design software developed by <a href="https://www.blade-energy.com/software/" target="_blank">Blade Tech.</a></p>
+        <p style="padding-top: ;">StrinGnosis<sup>&reg;</sup> Online is the first advanced well engineering software being provided to the industry as a fully managed, subscription based SaaS offering. It is the online version of StrinGnosis<sup>&reg;</sup>, the powerful desktop well design software developed by <a href="https://www.blade-energy.com/software/">Blade Tech.</a></p>
         <p>Driven by <a href="https://aws.amazon.com/appstream2/customers/#Blade">Amazon's AppStream 2.0</a> technology, and hosted on a private cloud, StrinGnosis<sup>&reg;</sup> instantly and seamlessly provides all the functionalities of the full desktop version, at a fraction of the ownership cost.</p>
         <p>The subscription based pricing makes it highly affordable and scalable for all types of users-individual, business or enterprise. Users have access to <a href="http://stringnosis.academy">StrinGnosis Academy</a>™, offering online training resources and access to <a href="https://www.blade-energy.com/service-item/well-engineering/" >Blade Energy</a> well engineers.</p>
         <hr>
         <div style="width: 80%;margin: 0 auto;text-align: center;">
         <p style="font-weight: bold; text-align: center">Start your 14-day complimentary trial of StrinGnosis<sup>&reg;</sup> well design software today.</p>
-        <p style="display: inline-block;text-align: center;"><a href="https://online.stringnosis.com/#/createdemouser" class="button blade-blue" style="height: 100%"><i class="fa fa-user-circle"> </i> Create Account</a></p>
-        <p style="display: inline-block;text-align: center;"><a href="#contact" target="_blank" class="button blade-blue" style="height: 100%"><i class="fa fa-envelope"> </i> Contact  Blade</a></p>
+        <p style="display: inline-block;text-align: center;"><a href="https://online.stringnosis.com/#/createdemouser" target = "_blank" class="button blade-blue" style="height: 100%"><i class="fa fa-user-circle"> </i> Create Account</a></p>
+        <p style="display: inline-block;text-align: center;"><a href="https://stringnosis.com#contact" class="button blade-blue" style="height: 100%"><i class="fa fa-envelope"> </i> Contact  Blade</a></p>
       </div>
       </div>
       </div>
@@ -99,7 +99,7 @@ body, html {
 <nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button large padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="bar-item button">ABOUT</a>
-  <button class="bar-item button blade-button" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
+  <button class="bar-item button blade-button" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
   <a href="#team" onclick="w3_close()" class="bar-item button">TEAM</a>
   <a href="#work" onclick="w3_close()" class="bar-item button">STRUCTURE</a>
   <a href="#pricing" onclick="w3_close()" class="bar-item button">TIERS</a>
@@ -439,7 +439,7 @@ body, html {
           <span class="opacity">per month</span>
         </li>
         <li class="light-grey padding-24">
-          <p><a class="button blade-blue padding-large" href="https://online.stringnosis.com" target="_blank"><i class="fa fa-wifi"></i> Free Trial</a>
+          <p><a class="button blade-blue padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Free Trial</a>
              <a class="button blade-blue padding-large" href="https://stringnosis.academy" target="_blank"><i class="fa fa-graduation-cap"></i> Free Training</a></p>
         </li>
       </ul>
@@ -456,7 +456,7 @@ body, html {
           <span class="opacity">per month</span>
         </li>
         <li class="light-grey padding-24">
-          <p><a class="button blade-blue padding-large" href="https://online.stringnosis.com" target="_blank"><i class="fa fa-wifi"></i> Free Trial</a>
+          <p><a class="button blade-blue padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Free Trial</a>
              <a class="button blade-blue padding-large" href="https://stringnosis.academy" target="_blank"><i class="fa fa-graduation-cap"></i> Free Training</a></p>
         </li>
       </ul>
@@ -473,7 +473,7 @@ body, html {
           <span class="opacity">per month</span>
         </li>
         <li class="light-grey padding-24">
-          <p><a class="button blade-blue padding-large" href="https://online.stringnosis.com" target="_blank"><i class="fa fa-wifi"></i> Free Trial</a>
+          <p><a class="button blade-blue padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Free Trial</a>
              <a class="button blade-blue padding-large" href="https://stringnosis.academy" target="_blank"><i class="fa fa-graduation-cap"></i> Free Training</a></p>
         </li>
       </ul>
