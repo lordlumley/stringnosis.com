@@ -85,11 +85,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .cell-row{display:table;width:100%}.cell{display:table-cell}
 .cell-top{vertical-align:top}.cell-middle{vertical-align:middle}.cell-bottom{vertical-align:bottom}
 .hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
-@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
+@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}.wrap {width: 96%;margin: 0 auto;}
 .dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}
 .hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
 .dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
-@media (max-width:768px){.modal-content{width:500px}.modal{padding-top:50px}}
+@media (max-width:768px){.modal-content{width:500px}.modal{padding-top:50px}.narrow-body {}}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
 @media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}}
@@ -222,14 +222,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   top: 20%;
 
 }
-
-/* Wrap div for narrower content */
-
-.wrap {
-  width: 96%;
-  margin: 0 auto;
-}
-
 
 
 /* Colours */
