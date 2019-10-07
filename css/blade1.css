@@ -224,6 +224,27 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 
+/* Features Table */
+
+.features-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.features-table th, td {
+  text-align: left;
+  padding: 6px;
+}
+
+.features-table tr:nth-child(even)
+  {background-color: #f2f2f2;
+}
+
+.features-table th {
+  background-color: #fff;
+  color: #AA2F14;
+}
+
 /* Colours */
 .blade-dark-red,.hover-blade-dark-red:hover{color:#AA2F14!important;background-color:#fff!important}
 .blade-blue,.hover-blade-blue:hover{color:#fff!important;background-color:#06273A!important}
