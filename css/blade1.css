@@ -2,7 +2,7 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 /* This fixes the white space to the right of mobile view */
-html, body{overflow: hidden;}
+html, body{overflow-x: hidden;}
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
