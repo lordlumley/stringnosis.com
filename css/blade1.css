@@ -14,7 +14,7 @@ a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:
 dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}svg:not(:root){overflow:hidden}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+code,kbd,pre,samp{font-`fa`mily:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
 button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
 button,input{overflow:visible}button,select{text-transform:none}
 button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
@@ -152,101 +152,95 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .screenshot {border:1px solid #8E979C}
 
 
-/* For Fade In Team Images */
-
-.content {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.content:hover .content-overlay{
-  opacity: 1;
-}
-
-.content-image{
-  width: 100%;
-}
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details h3{
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-.content-details p{
-  color: #fff;
-  font-size: 1.1em;
-}
-
-.fadeIn-top{
-  top: 20%;
-
-}
-
-
-/* Features Table */
-
-.features-table {
+/******* FEATURES TABLE ******/
+/* Style the table */
+table {
   border-collapse: collapse;
-  width: 100%;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  margin: 20px auto 0;
 }
 
-.features-table th, td {
+/* Style table headers and table data */
+th, td {
   text-align: center;
-  padding: 6px;
+  padding: 2px;
 }
 
-.features-table tr:nth-child(even)
-  {background-color: #f2f2f2;
+th:first-child, td:first-child {
+  text-align: left;
 }
 
-.features-table th {
-  background-color: #fff;
-  color: #AA2F14;
+/* Zebra-striped table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2
 }
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+
+
+/* PRICING TABLE */
+
+.pricing-columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.pricing {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pricing:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.pricing .pricing-header {
+  background-color: #004055;
+  color: white;
+  font-size: 25px;
+}
+
+.pricing li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.pricing .pricing-grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.pricing-button {
+  background-color: #06273A;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing-columns {
+    width: 100%;
+  }
+}
+
+
 
 /* Colours */
 .blade-dark-red,.hover-blade-dark-red:hover{color:#AA2F14!important;background-color:#fff!important}
