@@ -261,6 +261,13 @@ tr:nth-child(even) {
 }
 }
 
+/* Narrower Body for Specific Sections */
+
+@media (min-width: 600px) {
+  .narrow-section {
+    max-width: 45%;
+  }
+}
 
 
 /* Colours */
