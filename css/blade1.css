@@ -252,6 +252,28 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   color: #AA2F14;
 }
 
+/* Responsive Tier Buttons */
+
+.tier-buttons {
+  display: block;
+}
+
+
+.tier-buttons p {
+  display: inline;
+  padding-left: 5px;
+  width: 160px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1150px) {
+  .tier-buttons p {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+
 /* Colours */
 .blade-dark-red,.hover-blade-dark-red:hover{color:#AA2F14!important;background-color:#fff!important}
 .blade-blue,.hover-blade-blue:hover{color:#fff!important;background-color:#06273A!important}
