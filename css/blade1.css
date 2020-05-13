@@ -252,6 +252,158 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   color: #AA2F14;
 }
 
+/* LANDING PAGE FEATURES */
+
+.corefeatures {
+  display: block;
+  background: ;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.corefeatures li {
+  list-style-type: none;
+  padding: 5px;
+  background: #06273A;
+  color: #fff;
+  margin: 3px auto;
+  text-align: center;
+}
+
+.corefeatures li:hover {
+  font-weight: 900;
+}
+
+.advfeatures {
+  display: block;
+  background: ;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.advfeatures li {
+  list-style-type: none;
+  padding: 5px;
+  background: #AA2F14;
+  color: #fff;
+  margin: 3px auto;
+  text-align: center;
+}
+
+.advfeatures li:hover {
+  font-weight: 900;
+}
+
+.landingfeatures h1 {
+  padding-left: 40px;
+  margin-bottom: 35px;
+}
+
+
+@media (max-width:601px){
+  .corefeatures, .advfeatures {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .landingfeatures h1 {
+    padding-left: 0;
+  }
+}
+
+
+/* CALL TO ACTION SECTION */
+
+.ctafreetrial h1 {
+  color: #06273A;
+  letter-spacing: 1px;
+}
+
+.ctarequestdemo h1 {
+  color: #06273A;
+  letter-spacing: 1px;
+}
+
+
+/* LANDING PAGE HEADER BANNER */
+
+.headertitle {
+  width: 90%;
+  margin: 10px 0;
+}
+
+.headertitle h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.header-right {
+
+}
+
+.header-section {
+  margin-top: 25px;
+}
+
+.header-section {
+  display: block;
+  width: 80%;
+}
+
+.header-buttons-desktop {
+  display: none;
+}
+
+.header-buttons-mobile {
+  margin-top: 40px;
+}
+
+.header-buttons-mobile a {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@media (min-width:601px){
+  .headertitle h1 {
+    width: 60%;
+    margin: 125px auto 20px;
+    line-height: 2;
+    font-weight: 900;
+  }
+  .header-buttons-mobile {
+    display: none;
+  }
+  .header-buttons-desktop {
+    display: block;
+    margin: 0 auto;
+  }
+  .header-buttons-desktop a {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 5px;
+  }
+  .header-right {
+    display: block;
+    width: 100%;
+  }
+  .header-section {
+    display: block;
+  }
+  .header-right p {
+    display: inline-block;
+    width: 600px;
+    margin: 0 0 0 0px;
+    line-height: 2.5;
+    text-align: justify;
+    color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+  }
+}
+
+
 
 
 
