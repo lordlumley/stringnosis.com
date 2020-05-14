@@ -44,7 +44,29 @@ Have a great day!
         .bgimg-1 {
             background-position: center;
             background-size: cover;
-            background-image: url("images/stringnosis-well.png");
+            background-image: url("images/stringnosis-vme.png");
+            min-height: 100%;
+        }
+        .bar .button {
+            padding: 16px;
+        }
+
+        /* Full height image header */
+        .bgimg-2 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("images/onshore-rig.jpeg");
+            min-height: 100%;
+        }
+        .bar .button {
+            padding: 16px;
+        }
+
+        /* Full height image header */
+        .bgimg-3 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("images/offshore-rig.png");
             min-height: 100%;
         }
         .bar .button {
@@ -61,205 +83,65 @@ Have a great day!
   <!-- End Google Tag Manager (noscript) -->
 
 
-<!-- Navbar (sit on top) -->
-<div class="top">
-  <div class="bar white card" id="myNavbar">
-    <a href="#home" class="bar-item button wide">STRINGNOSIS&reg;</a>
-    <!-- Right-sided navbar links -->
-    <div class="right hide-small">
-      <button class="bar-item button blade-button" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
-      <a href="#about" class="bar-item button">ABOUT</a>
-      <button class="bar-item button blade-button" onclick="document.getElementById('features-modal-box').style.display='block'"><i class="fa fa-television"></i> FEATURES</button>
-      <a href="#team" class="bar-item button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#structure" class="bar-item button"><i class="fa fa-th"></i> STRUCTURE</a>
-      <a href="#tiers" class="bar-item button"><i class="fa fa-usd"></i> TIERS</a>
-      <a href="#contact" class="bar-item button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="https://online.stringnosis.com" class="bar-item button"><i class="fa fa-id-card-o"></i> LOGIN</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<div id="free-trial-modal" class="modal animate-opacity">
-    <div class="modal-content card-4">
-      <header class="container blade-blue-inverse">
-        <span onclick="document.getElementById('free-trial-modal').style.display='none'" class="button large display-topright">&times;</span>
-        <h2 style="text-align: center;margin-top: 15px;font-weight: bold;">StrinGnosis<sup>&reg;</sup> Online 28 Day Trial</h2>
-      </header>
-      <div class="container justify">
-        <div style="line-height:1.4;width: 90%;margin: 0 auto;">
-        <p>StrinGnosis<sup>&reg;</sup> Online is the first advanced well engineering software being provided to the industry as a fully managed, subscription based SaaS offering. It is the online version of StrinGnosis<sup>&reg;</sup>, the powerful desktop well design software developed by <a href="https://www.blade-energy.com/software/">Blade Tech.</a></p>
-        <p>Driven by <a href="https://aws.amazon.com/appstream2/customers/#Blade">Amazon's AppStream 2.0</a> technology, and hosted on a private cloud, StrinGnosis<sup>&reg;</sup> instantly and seamlessly provides all the functionalities of the full desktop version, at a fraction of the ownership cost.</p>
-        <p>The subscription based pricing makes it highly affordable and scalable for any types of user: independent contractors, small to medium sized business's or enterprise organisations. Users have access to <a href="http://stringnosis.academy">StrinGnosis Academy</a>™, which offers online training resources and access to <a href="https://www.blade-energy.com/service-item/well-engineering/" >Blade Energy Partners</a> well engineers.</p>
-        <hr>
-        <div style="width: 80%;margin: 0 auto;text-align: center;">
-        <p style="font-weight: bold; text-align: center">Start your 28 day complimentary trial of StrinGnosis<sup>&reg;</sup> well design software today.</p>
-        <p style="display: inline-block;text-align: center;"><a href="https://online.stringnosis.com/#/createdemouser" target = "_blank" class="button blade-blue" style="height: 100%"><i class="fa fa-user-circle"> </i> Create Account</a></p>
-        <p style="display: inline-block;text-align: center;"><a href="https://stringnosis.com#contact" class="button blade-blue" style="height: 100%"><i class="fa fa-envelope"> </i> Contact  Blade</a></p>
-      </div>
-      </div>
-      </div>
-      <footer style="margin-top: 10px;" class="container blade-blue-inverse">
-        <p style="font-size: 0.8em;">&copy; 2012-2019 <a href="https://www.blade-energy.com/software/" class="hover-text-green">Blade Technology Corporation LLC</a> All Rights Reserved</p>
-      </footer>
-    </div>
-  </div>
-
-
-<!-- Sidebar on small screens when clicking the menu icon "HAMBURGER MENU"-->
-<nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button large padding-16">Close ×</a>
-  <button class="bar-item button blade-button" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> FREE TRIAL</button>
-  <a href="#about" onclick="w3_close()" class="bar-item button">ABOUT</a>
-  <button class="bar-item button blade-button" onclick="document.getElementById('features-modal-box').style.display='block'"><i class="fa"></i> FEATURES</button>
-  <a href="#team" onclick="w3_close()" class="bar-item button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="bar-item button">STRUCTURE</a>
-  <a href="#pricing" onclick="w3_close()" class="bar-item button">TIERS</a>
-  <a href="#contact" onclick="w3_close()" class="bar-item button">CONTACT</a>
-  <a href="https://online.stringnosis.com" onclick="w3_close()" class="bar-item button">LOGIN</a>
-</nav>
-
-<div id="features-modal-box" class="modal animate-opacity">
-    <div class="modal-content card-4">
-      <header class="container blade-blue-inverse" style="margin-bottom: 10px;">
-        <span onclick="document.getElementById('features-modal-box').style.display='none'"
-        class="button large display-topright">&times;</span>
-        <h2 style="font-weight: bold; text-align: center;margin-top: 15px;">StrinGnosis<sup>&reg;</sup> Features</h2>
-      </header>
-      <div class="container justify">
-        <div style="line-height:1.4;width: 80%;margin: 0 auto;">
-          <table class="features-table">
-            <tr>
-              <th>CORE</th>
-            </tr>
-            <tr>
-              <td>Working Stress Design (Level 2)</td>
-            </tr>
-            <tr>
-              <td>Connection design checks</td>
-            </tr>
-            <tr>
-              <td>Customizable Equipment Database</td>
-          </tr>
-          <tr>
-            <td>SideKick</td>
-          </tr>
-          <tr>
-            <td>Minimum Safety Factor summary tables and bar charts</td>
-          </tr>
-          <tr>
-            <td>Standard and custom loads</td>
-          </tr>
-          <tr>
-            <td>Completion Design Loads with Completion Equipment</td>
-        </tr>
-        <tr>
-          <td>Transient Thermal Simulation</td>
-        </tr>
-        <tr>
-          <td>Custom Report Generator</td>
-        </tr>
-        <tr>
-          <td>Editable fluids database</td>
-        </tr>
-        <tr>
-        </table>
-
-          <table class="features-table" style="margin-top: 20px;">
-          <th>ADVANCED</th>
-        </tr>
-        <tr>
-          <td>Worst Case Discharge / Well Containment</td>
-        </tr>
-        <tr>
-          <td>Brittle Failure Limit</td>
-        </tr>
-        <tr>
-          <td>Limit State Design (LSD) (Level 3)</td>
-      </tr>
-      <tr>
-        <td>Probabilistic Strength</td>
-      </tr>
-      <tr>
-        <td>Reliability Based Design (RBD) (Level 4)</td>
-      </tr>
-      <tr>
-        <td>Annulus Pressure Buildup (APB)</td>
-      </tr>
-      <tr>
-        <td>Wellhead Movement</td>
-    </tr>
-    <tr>
-      <td>Design of anisotropic materials</td>
-    </tr>
-    <tr>
-      <td>Standard Load Template customization</td>
-    </tr>
-    <tr>
-      <td>Reliability Based Design (RBD) (Level 5)</td>
-    </tr>
-        </table>
-        </div>
-        <hr>
-        <div style="width: 80%;margin: 0 auto;text-align: center;">
-        <p style="font-weight: bold; text-align: center">Start your 28 day complimentary trial of StrinGnosis<sup>&reg;</sup> well design software today.</p>
-        <p style="display: inline-block;text-align: center;"><a href="https://online.stringnosis.com/#/createdemouser" target="_blank" class="button blade-blue" style="height: 100%"><i class="fa fa-user-circle"> </i> Create Account</a></p>
-        <p style="display: inline-block;text-align: center;"><a href="https://stringnosis.com#contact" class="button blade-blue" style="height: 100%"><i class="fa fa-envelope"> </i> Contact  Blade</a></p>
-      </div>
-      </div>
-      <footer style="margin-top: 10px;" class="container blade-blue-inverse">
-        <p style="font-size: 0.8em;">&copy; 2012-2019 <a href="https://www.blade-energy.com/software/" class="hover-text-green">Blade Technology Corporation LLC</a> All Rights Reserved</p>
-      </footer>
-    </div>
-  </div>
-
-
-
-
-
-
-
 
 
 
 
   <!-- NEW HEADER -->
-<div class="container grayscale-min bgimg-1 " style="padding:128px 16px">
+
+  <div class="hero-image">
+    <div class="container" style="margin: 0;padding: 0;">
+  </div>
+    <div class="hero-text">
+      <h1>STRINGNOSIS<sup>&reg;</sup> </h1>
+      <p>Well Design & Tubing Stress Analysis Software</p>
+    </div>
+    <div class="col m6 hero-left">
+      <h3>- Delivered by the Senior Well Engineers of Blade Energy Partners -</h3>
+      <h1>SAVE TIME AND MONEY.<br> OPTIMIZE WELL DESIGNS.</h1>
+    </div>
+    <div class="col m6 hero-right">
+      <div class="button-container">
+        <button class="hero-button"><span>TRY FOR FREE </span></button>
+        <button class="hero-button" style="margin-top: 20px;"><span>REQUEST A DEMO </span></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- OLD HEADER
   <div class="landingpageheader">
   <div class="col m6 headertitle">
-    <h1>WELL DESIGN & TUBING STRESS ANALYSIS SOFTWARE</h1>
-    <div class="header-buttons-desktop">
-      <a class="button blade-blue" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Create Free Trial</a>
-      <a class="button blade-blue" href="#contact"><i class="fa fa-envelope"></i> Request Demonstration</a>
-      <a class="button blade-blue" href="#learnmore"><i class="fa fa-graduation-cap"></i> Learn More</a>
+    <h1>STRINGNOSIS<sup>&reg;</sup></h1>
+    <h3>WELL DESIGN & TUBING STRESS ANALYSIS SOFTWARE</h3>
+    <div class="">
+
     </div>
+    <ul class="header-buttons-desktop">
+      <li><a class="button" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Create Free Trial</a></li>
+      <li><a class="button" href="#contact"><i class="fa fa-envelope"></i> Request Demonstration</a></li>
+      <li><a class="button" href="#learnmore"><i class="fa fa-graduation-cap"></i> Learn More</a></li>
+    </ul>
   </div>
   <div class="col m6 header-right">
       <div class="col header-section">
-        <p class="dark-grey">StrinGnosis<sup>&reg;</sup> is a  <strong>casing and tubing analysis program</strong> that reflects the logic and information flow of actual well design. Analytical results provides complete knowledge of each casing, liner or tubing string.</p>
-      <div class="col header-section">
-        <p class="dark-grey">The resulting look and feel is very natural to an engineer, who can become familiar with it very quickly. Most importantly, the casing design software is both <strong>linear and logical</strong>.</p>
+
+        <p class=""><span>Analytical</span><br>StrinGnosis<sup>&reg;</sup> is a  <strong>casing and tubing analysis program</strong> that reflects the logic and information flow of actual well design. Analytical results provides complete knowledge of each casing, liner or tubing string.</p>
       </div>
       <div class="col header-section">
-        <p class="dark-grey">StrinGnosis<sup>&reg;</sup> is not meant solely for the designer of complex wells. The user interface and functionalities are intuitive, with customizable standard load packages, so that even standard <strong> well designs are easy and quick</strong>.</p>
+        <p class=""><span>Logical</span><br>The resulting look and feel is very natural to an engineer, who can become familiar with it very quickly. Most importantly, the casing design software is both <strong>linear and logical</strong>.</p>
+      </div>
+      <div class="col header-section" style="margin-bottom: 40px;">
+        <p class=""><span>Customizable</span><br>StrinGnosis<sup>&reg;</sup> is not meant solely for the designer of complex wells. The user interface and functionalities are intuitive, with customizable standard load packages, so that even standard <strong> well designs are easy and quick</strong>.</p>
+      </div>
+      <div class="header-buttons-mobile">
+        <a class="button" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Create Free Trial</a>
+        <a class="button" href="#contact"><i class="fa fa-envelope"></i> Request Demonstration</a>
+        <a class="button" href="#learnmore"><i class="fa fa-graduation-cap"></i> Learn More</a>
+      </div>
       </div>
     </div>
-  </div>
-
-
-    <div class="header-buttons-mobile">
-      <a class="button blade-blue" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Create Free Trial</a>
-      <a class="button blade-blue" href="#contact"><i class="fa fa-envelope"></i> Request Demonstration</a>
-      <a class="button blade-blue" href="#learnmore"><i class="fa fa-graduation-cap"></i> Learn More</a>`
-    </div>
-    </div>
-</div>
-
-
+-->
 
 
   <!-- TESIMONIAL SECTION -->
@@ -289,24 +171,6 @@ Have a great day!
 
 
 
-<!--
-<header class="bgimg-1 display-container grayscale-min" id="home">
-  <div class="display-left" style="padding:48px 0 48px 48px; color:#06273A; left: 5%;">
-    <h1 style="margin: 0;"><span class="jumbo hide-small">STRINGNOSIS<sup>&reg;</sup> Online</span><br></h1>
-    <span style="margin: 0;" class="xxlarge hide-large hide-medium">StrinGnosis<sup>&reg; </sup></span><br>
-    <span style="margin:0 auto;" class="xlarge">Well Design & Tubing Stress Analysis Software</span>
-    <p ><a style="font-weight: 900;" class="button blade-blue padding-large margin-top" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Create Free Trial</a>
-        <a style="font-weight: 900;" style="font-weight: 900;"class="button blade-blue padding-large margin-top" href="#contact"><i class="fa fa-envelope"></i> Request Demonstration</a>
-        <a style="font-weight: 900;" style="font-weight: 900;"class="button blade-blue padding-large margin-top" href="#learnmore"><i class="fa fa-graduation-cap"></i> Learn More</a></p>
-  </div>
-  <div class="display-bottomleft text-grey large" style="padding:24px 48px">
-    <a href="https://twitter.com/stringnosis" target="_blank"><i class="fa fa-twitter hover-opacity"></i></a>
-    <a style="padding-left: 20px;" href="https://www.linkedin.com/company/blade-energy-partners" target="_blank"><i class="fa fa-linkedin hover-opacity"></i></a>
-    <a style="padding-left: 20px;" href="https://www.youtube.com/channel/UCtBkpyCYtlG0ter3jX6tZlA" target="_blank"><i class="fa fa-youtube-play hover-opacity"></i></a>
-    <a style="padding-left: 20px;" href="http://stringnosis.academy" target="_blank"><i class="fa fa-graduation-cap hover-opacity"></i></a>
-      </div>
-</header>
-
 
 <div class="container light-grey" style="padding:128px 16px" id="learnmore">
   <div class="narrow-body-mobile">
@@ -331,81 +195,225 @@ Have a great day!
 </div>
 
 
--->
 
 
+<!-- INTRO TO THE FEATURES SECTION -->
+<div style="border-top: 2px solid black;border-bottom: 2px solid black" class="container row center">
+  <div class="center">
+    <a href="#features-section" class="button padding-large"><h3>STRINGNOSIS<sup>&reg;</sup> IS AVAILABLE IN TWO VERSIONS, DEPENDING ON THE TYPE OF WELLS YOU WORK WITH AND DESIGN</h3></a>
+  </div>
+</div>
 
 
-
-
-
-
-
-<!-- STRINGNOSIS CORE VERSION -->
-<div class="container light-grey " style="padding:128px 16px">
+<!-- STRINGNOSIS FEAURES -->
+<div class="container light-grey bgimg-3" id="#features-section" style="padding:128px 16px">
   <div class="narrow-body-mobile"> <!-- narrow-body-mobile to make mobile content narrower -->
   <div class="row-padding">
-    <div class="col m6 center">
-      <img class="image screenshot opaque" src="images/onshore-rig.jpeg" alt="ScreenShots" width="750px">
+    <div class="center">
+      <h1 style="margin-bottom: 40px;" class="center">STRINGNOSIS<sup>&reg;</sup> FEATURES</h1>
     </div>
-    <div class="col m6 landingfeatures">
-      <h1 class="center">CORE FEATURES</h1>
-      <div class="justify">
-        <ul class="corefeatures">
-          <li>Connection Design Checks</li>
-          <li>Customizable Equipment Database</li>
-          <li>Standard & User Customized Loads</li>
-          <li>Minimum Safety Factor Summary Tables</li>
-          <li>Thermal Simulation</li>
-          <li>Custom Report Generator</li>
-          <li>Editable fluids database</li>
-          <li>Completion Design Loads & Equipment</li>
-        </ul>
+    <div class="col quarter">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>WCD/Well Containment</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Connection Design Checks</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>Brittle Failure Limit</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Custom Equipment Database</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="col quarter">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Minimum Safety Factors</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>Probabilistic Strength</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Standard & Custom Loads</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>APB Analysis</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2></h2>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="col quarter">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>Wellhead Movement</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Custom Fluids Database</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>Design of Anisotropic Materials</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Thermal Analysis</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="col quarter">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Completion Design/Equipment</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front advanced">
+            <h2>LSD/RBD Design Methods</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front core">
+            <h2>Custom Report Generator</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front coreandadvanced">
+            <h2>Complimentary Training</h2>
+        </div>
+        <div class="flip-box-back">
+          <h2>Back Side</h2>
+        </div>
+      </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-
-
-
-
-<!-- STRINGNOSIS ADVANCED VERSION -->
-<div class="container" style="padding:128px 16px">
-  <div class="narrow-body-mobile"> <!-- narrow-body-mobile to make mobile content narrower -->
-  <div class="row-padding">
-    <div class="col m6 center" style="float: right;">
-      <img class="image screenshot opaque" src="images/sea-oil-platform.jpg" alt="ScreenShots" width="750px">
-    </div>
-    <div class="col m6 landingfeatures">
-      <h1 class="center">ADVANCED FEATURES</h1>
-      <div class="justify">
-        <ul class="advfeatures">
-        <li>All Core Features</li>
-        <li>Wellhead Movement</li>
-        <li>Brittle Failure Limit</li>
-        <li>Probabilistic Strength</li>
-        <li>Annulus Pressure Buildup (APB)</li>
-        <li>Design of anisotropic materials</li>
-        <li>Limit State & Reliability Based Design</li>
-        <li>Worst Case Discharge / Well Containment</li>
-      </ul>
-    </div>
   </div>
 </div>
-</div>
-</div>
-
 
 <!-- CTA FREE TRIAL -->
-<div style="border-top: 2px solid black;border-bottom: 2px solid black" class="container row center light-grey">
+<div style="border-top: 2px solid black;border-bottom: 2px solid black" class="container row center">
   <div class="col m6">
-    <a class="button padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><h1>START DESIGNING IN STRINGNOSIS<sup>&reg;</sup></h1></a>
+    <a class="button padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><h1>START STRINGNOSIS<sup>&reg;</sup> TRIAL</h1></a>
   </div>
   <div class="col m6">
-    <a class="button padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><h1>SPEAK WITH A WELL ENGINEER</h1></a>
+    <a class="button padding-large" href="#contact"><h1>REQUEST A QUOTE</h1></a>
   </div>
 </div>
+
 
 <!-- Structure Section -->
 <div class="container" style="padding:128px 16px" id="structure">

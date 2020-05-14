@@ -254,60 +254,76 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* LANDING PAGE FEATURES */
 
-.corefeatures {
-  display: block;
-  background: ;
-  width: 50%;
-  margin: 0 auto;
+.flip-box {
+  background-color: transparent;
+  width: 250px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 10px auto;
+  width: 100%;
 }
 
-.corefeatures li {
-  list-style-type: none;
-  padding: 5px;
-  background: #06273A;
-  color: #fff;
-  margin: 3px auto;
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
 }
 
-.corefeatures li:hover {
-  font-weight: 900;
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
 }
 
-.advfeatures {
-  display: block;
-  background: ;
-  width: 50%;
-  margin: 0 auto;
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.advfeatures li {
-  list-style-type: none;
-  padding: 5px;
-  background: #AA2F14;
+.flip-box-front.core {
+  background-color: #06273A;
   color: #fff;
-  margin: 3px auto;
-  text-align: center;
 }
 
-.advfeatures li:hover {
-  font-weight: 900;
+.flip-box-front.advanced {
+  background-color: #AA2F14;
+  color: #fff;
 }
 
-.landingfeatures h1 {
-  padding-left: 40px;
-  margin-bottom: 35px;
+.flip-box-front.coreandadvanced {
+  background-image: linear-gradient(#AA2F14, #06273A);
+  color: #fff;
+}
+
+.flip-box-front h2 {
+  font-size: 20px;
+  line-height: 75px;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back h2 {
+  font-size: 18px;
+  line-height: 75px;
 }
 
 
-@media (max-width:601px){
-  .corefeatures, .advfeatures {
-    width: 95%;
-    margin-bottom: 20px;
-    padding: 0;
+@media (max-width:800px){
+  .flip-box-front h2 {
+    font-size: 18px;
+    line-height: 75px;
   }
-  .landingfeatures h1 {
-    padding-left: 0;
+  .flip-box-back h2 {
+    font-size: 14px;
   }
 }
 
@@ -327,83 +343,104 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* LANDING PAGE HEADER BANNER */
 
-.headertitle {
-  width: 90%;
-  margin: 10px 0;
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/offshore-rig.jpeg");
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.6;
 }
 
-.headertitle h1 {
-  font-size: 28px;
+.hero-text {
+  color: #fff;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 100px ;
+}
+
+.hero-text h1 {
+  font-size: 40px;
   text-align: center;
-}
-
-.header-right {
-
-}
-
-.header-section {
-  margin-top: 25px;
-}
-
-.header-section {
-  display: block;
-  width: 80%;
-}
-
-.header-buttons-desktop {
-  display: none;
-}
-
-.header-buttons-mobile {
+  font-weight: 900;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 
-.header-buttons-mobile a {
-  display: block;
-  margin: 20px auto;
+.hero-text p {
+  font-size:24px;
   text-align: center;
-}
+  margin: 0;
 
-@media (min-width:601px){
-  .headertitle h1 {
-    width: 60%;
-    margin: 125px auto 20px;
-    line-height: 2;
-    font-weight: 900;
-  }
-  .header-buttons-mobile {
-    display: none;
-  }
-  .header-buttons-desktop {
-    display: block;
-    margin: 0 auto;
-  }
-  .header-buttons-desktop a {
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 5px;
-  }
-  .header-right {
-    display: block;
-    width: 100%;
-  }
-  .header-section {
-    display: block;
-  }
-  .header-right p {
-    display: inline-block;
-    width: 600px;
-    margin: 0 0 0 0px;
-    line-height: 2.5;
-    text-align: justify;
-    color: #fff;
-    padding: 25px;
-    border-radius: 5px;
-  }
 }
 
 
+.button-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.hero-button {
+  border-radius: 4px;
+  background-color: #fff;
+  border: none;
+  color: #696969	;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  padding: 20px;
+  margin: 140px auto 0;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: block;
+}
+
+
+.hero-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hero-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hero-button:hover span {
+  padding-right: 25px;
+}
+
+.hero-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.hero-left h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0;
+  color: #fff;
+  font-style: italic;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  text-align: center;
+  width:  70%;
+  margin: 50px auto 0;
+  font-weight: 900;
+  color: #fff;
+}
 
 
 
