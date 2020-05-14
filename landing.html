@@ -102,11 +102,63 @@ Have a great day!
     </div>
     <div class="col m6 hero-right">
       <div class="button-container">
-        <button class="hero-button"><span>TRY FOR FREE </span></button>
+        <button class="hero-button" id="landingftmodal" data-toggle="modal" onclick="document.getElementById('free-trial-modal').style.display='block'"><span>TRY FOR FREE </span></button>
         <button class="hero-button" style="margin-top: 20px;"><span>REQUEST A DEMO </span></button>
       </div>
     </div>
   </div>
+
+  <!-- The Modal -->
+  <div id="landingpageftmodal" class="ftmodal">
+
+    <!-- Modal content -->
+    <div class="ftmodal-content">
+      <div class="ftmodal-header">
+        <span class="close">&times;</span>
+        <h2>28 DAY COMPLIMENTARY TRIAL</h2>
+      </div>
+      <div class="ftmodal-body" style="padding: 20px;">
+        <h3>Nothing to install. Access worldwide. Learn at your own pace.</h3>
+        <p>Start designing and analysing wells with <i>STRINGNOSIS<sup>&reg;</sup> Online</i>, in less than 10 minutes.</p>
+        <a class="button light-grey padding-large" onclick="document.getElementById('free-trial-modal').style.display='block'"><i class="fa fa-wifi"></i> Free Trial</a>
+        <a class="button light-grey padding-large" href="https://stringnosis.academy" target="_blank"><i class="fa fa-graduation-cap"></i> Free Training</a></p>
+      </div>
+      <div class="ftmodal-footer">
+        <p>© 2012-2019 Blade Technology Corporation LLC All Rights Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+      <script>
+    // Get the modal
+    var modal = document.getElementById("landingpageftmodal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("landingftmodal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+
 
 
   <!-- OLD HEADER
