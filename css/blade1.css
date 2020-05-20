@@ -247,7 +247,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 0.6;
 }
 
 .hero-text {
@@ -455,31 +454,27 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   margin: 15px auto 0;
 }
 
+.feature-button-container a {
+  text-decoration: none;
+}
+
 .features-btn-core {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 14px 28px;
   font-size: 14px;
   cursor: pointer;
-  font-weight: 900;
   width: 300px;
   height: 75px;
+  background: #fff;
+  border: #06273A solid 2px;
 }
 
 .features-btn-advanced {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 14px 28px;
   font-size: 14px;
   cursor: pointer;
-  font-weight: 900;
   width: 300px;
   height: 75px;
+  background: #fff;
+  border: #AA2F14 solid 2px;
 }
-
-
 
 .advancedbtn {
   border-color: #AA2F14;
@@ -503,6 +498,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   color: #fff;
 }
 
+.plainbutton {
+  border-color: #000;
+  color: #000;
+  background: #fff;
+  margin: 2px;
+}
 
 .popup {
   position: fixed;
@@ -583,7 +584,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin: 0 auto;
     width: 95%;
   }
-  .features-section P {
+  .features-section p {
     width: 100%;
   }
   .features-btn-advanced {
