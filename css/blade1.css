@@ -627,7 +627,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .arrange-demo {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 0 0 300px;
   padding: 15px;
 }
 
@@ -636,14 +636,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .arrange-demo p {
-  text-align: justify;
-  width: 90%;
   margin: 20px auto;
 }
 
 .start-trial {
   width: 70%;
-  margin: 0 auto;
   padding: 15px;
 }
 
@@ -657,9 +654,16 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   margin: 20px auto;
 }
 
-@media (max-width:800px) {
+@media (max-width:1650px) {
+  .arrange-demo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:850px) {
   .arrange-demo {
     width: 95%;
+    margin: 0 auto;
   }
   .start-trial {
     width: 90%;
