@@ -371,7 +371,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 @media (max-width:800px){
   .hero-image {
-    height: 50%;
+    height: 60%;
   }
   .hero-text {
     padding: 0;
@@ -393,6 +393,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   .hero-left h1 {
     font-size: 28px;
     width:  95%;
+    margin: 40px auto;
   }
   .hero-button {
     font-size: 20px;
@@ -401,9 +402,41 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   }
 }
 
+@media (max-width:680px){
+  .hero-image {
+    height: 50%;
+  }
+  .hero-text {
+    padding: 0;
+    width: 100%;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size:18px;
+    width: 80%;
+    margin: 5px auto;
+  }
+  .hero-left h3 {
+    font-size: 14px;
+    width: 80%;
+  }
+  .hero-left h1 {
+    font-size: 28px;
+    width:  95%;
+    margin: 35px auto;
+  }
+  .hero-button {
+    font-size: 20px;
+    margin: 45px auto 0;
+    width: 250px;
+  }
+}
+
 @media (max-width:650px){
   .hero-image {
-    height: 95%;
+    height: 50%;
   }
   .hero-text {
     padding: 0;
@@ -434,6 +467,45 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 
+@media (max-width:600px){
+  .hero-image {
+    height: 80%;
+  }
+}
+
+@media (max-width:500px){
+  .hero-image {
+    height: 90%;
+  }
+}
+
+
+/* TESTIMONIAL IMAGES */
+
+.testimonial-images img {
+  width: 225px;
+}
+
+@media (max-width:1287px){
+  .testimonial-images img {
+    width: 150px;
+  }
+}
+
+@media (max-width:865px){
+  .testimonial-images img {
+    width: 100px;
+  }
+}
+
+@media (max-width:600px){
+  .testimonial-images img {
+    width: 225px;
+    margin: 2px auto;
+  }
+}
+
+
 /* LANDING PAGE FEATURES */
 
 .features-section h2 {
@@ -449,9 +521,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .feature-button-container {
-  width: 90%;
+  width: 65%;
   display: block;
-  margin: 15px auto 0;
+  margin: 1% auto 0;
+  padding: 25px;
 }
 
 .feature-button-container a {
@@ -577,26 +650,98 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 
+@media (max-width:1457px){
+  .feature-button-container {
+    margin: 10px auto;
+  }
+  .popup {
+    position: fixed;
+    padding: 50px ;
+    max-width: 500px;
+    max-height: 800px;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.9);
+    visibility: hidden;
+    opacity: 0;
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity .5s, visibility 0s linear .5s;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+  }
+  }
 
+@media (max-width:1025px){
+  .features-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .features-section h2 {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+  }
+  .features-section p {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+  }
+  .feature-button-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .features-btn-advanced {
+    font-size: 15px;
+    width: 35%;
+    height: 100px;
+ }
+  .features-btn-core {
+    font-size: 15px;
+    width: 35%;
+    height: 100px;
+
+  }
+  .popup {
+    position: fixed;
+    padding: 50px ;
+    max-width: 500px;
+    max-height: 800px;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.9);
+    visibility: hidden;
+    opacity: 0;
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity .5s, visibility 0s linear .5s;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+  }
+  }
 
 @media (max-width:800px){
   .features-section h2 {
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
   }
   .features-section p {
-    width: 100%;
+    width: 90%;
   }
   .features-btn-advanced {
     font-size: 15px;
-    width: 100%;
+    width: 275px;
     height: 100px;
     display: block;
     margin: 15px auto;
  }
   .features-btn-core {
     font-size: 15px;
-    width: 100%;
+    width: 275px;
     height: 100px;
     display: block;
     margin: 15px auto;
