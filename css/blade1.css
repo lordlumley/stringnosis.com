@@ -527,6 +527,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   padding: 25px;
 }
 
+.button-container {
+  width: 100%;
+  text-align: center;
+}
+
 .feature-button-container a {
   text-decoration: none;
 }
@@ -587,7 +592,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   top: 45%;
   left: 18%;
   transform: translate(-50%,-50%);
-  background: rgba(255,255,255,.9);
+  background: #FFF;
   visibility: hidden;
   opacity: 0;
   /* "delay" the visibility transition */
